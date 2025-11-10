@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tarot del Caos</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header id="inicio">
+    <h1>Tarot del Caos</h1>
+    <p>Descubre los misterios de los Arcanos</p>
+    <button class="btn" id="btnBienvenido">Bienvenido</button>
+    <button class="btn" id="modo">Modo Oscuro</button>
+  </header>
+
+  <nav>
+    <a href="#inicio">Inicio</a>
+    <a href="#arcanos">Arcanos</a>
+    <a href="#lecturas">Lecturas</a>
+    <a href="#tarot">Tarot</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+
+  <main>
+    <!-- Sección Arcanos -->
+    <section id="arcanos">
+      <h2>Arcanos del Tarot</h2>
+
+      <div class="tarjeta">
+        <h3>Arcanos Mayores</h3>
+        <p>22 cartas que representan arquetipos universales y aprendizajes espirituales.</p>
+        <button class="btn" onclick="mostrar('mayores')">Ver más</button>
+        <div id="mayores" class="contenido">
+          <p><strong>Definición:</strong> Lecciones espirituales y energía arquetípica.</p>
+          <p><strong>Cartas:</strong> El Loco, El Mago, La Sacerdotisa, La Emperatriz...</p>
+        </div>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Arcanos Menores</h3>
+        <p>56 cartas que reflejan la vida cotidiana: Copas, Espadas, Oros y Bastos.</p>
+        <button class="btn" onclick="mostrar('menores')">Ver más</button>
+        <div id="menores" class="contenido">
+          <p><strong>Definición:</strong> Experiencias diarias, emociones y acciones humanas.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Lecturas -->
+    <section id="lecturas">
+      <h2>Lecturas del Tarot</h2>
+      <p>Explora distintas tiradas y descubre mensajes ocultos del universo.</p>
+      <button class="btn" id="tirarCarta">Tirar una Carta</button>
+      <div class="resultado" id="resultadoCarta"></div>
+    </section>
+
+    <!-- Sección Tarot -->
+    <section id="tarot">
+      <h2>Galería de Cartas</h2>
+      <p>Explora las cartas del tarot del caos.</p>
+
+      <div class="galeria">
+        <div class="carta"><img src="img/fool.svg" alt="El Loco"></div>
+        <div class="carta"><img src="img/magician.svg" alt="El Mago"></div>
+        <div class="carta"><img src="img/high_priestess.svg" alt="La Sacerdotisa"></div>
+        <div class="carta"><img src="img/empress.svg" alt="La Emperatriz"></div>
+        <div class="carta"><img src="img/emperor.svg" alt="El Emperador"></div>
+        <div class="carta"><img src="img/hierophant.svg" alt="El Hierofante"></div>
+        <div class="carta"><img src="img/lovers.svg" alt="Los Enamorados"></div>
+        <div class="carta"><img src="img/wheel.svg" alt="La Rueda"></div>
+        <div class="carta"><img src="img/death.svg" alt="La Muerte"></div>
+      </div>
+
+      <a class="tarot-link" href="https://tarotoo.com/es/" target="_blank">Ir a la página del Tarot</a>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto">
+      <h2>Contacto</h2>
+      <p>¿Deseas una lectura personalizada? Escríbenos.</p>
+      <button class="btn" onclick="window.location='mailto:amordharma@gmail.com'">Enviar mensaje</button>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 Tarot del Caos | Contacto: amordharma@gmail.com
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
